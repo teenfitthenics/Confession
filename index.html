@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Her Beauty ❤️</title>
+  <title>Roshnee ❤️</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
@@ -19,13 +19,13 @@
 
     body{
       font-family:'Poppins',sans-serif;
+      background:linear-gradient(180deg,#fff5f7,#ffe5ec);
       overflow-x:hidden;
-      background:#fff5f7;
       color:#2d0d0d;
       min-height:100vh;
     }
 
-    .bg-hearts{
+    .bg{
       position:fixed;
       inset:0;
       overflow:hidden;
@@ -34,9 +34,9 @@
 
     .heart{
       position:absolute;
-      color:rgba(255,0,80,0.18);
+      bottom:-60px;
+      color:rgba(255,0,80,0.2);
       animation:float linear infinite;
-      bottom:-50px;
     }
 
     @keyframes float{
@@ -48,7 +48,7 @@
       }
     }
 
-    .container{
+    .main{
       width:100%;
       min-height:100vh;
       display:flex;
@@ -61,11 +61,11 @@
       width:100%;
       max-width:430px;
       padding:28px;
-      border-radius:32px;
+      border-radius:34px;
       background:rgba(255,255,255,0.18);
-      backdrop-filter:blur(14px);
-      border:1px solid rgba(255,255,255,0.3);
-      box-shadow:0 15px 40px rgba(255,0,85,0.18);
+      backdrop-filter:blur(18px);
+      border:1px solid rgba(255,255,255,0.35);
+      box-shadow:0 15px 40px rgba(255,0,85,0.15);
       animation:fadeUp 1s ease;
     }
 
@@ -80,68 +80,64 @@
       }
     }
 
-    .title{
+    .name{
       text-align:center;
       font-family:'Dancing Script',cursive;
+      font-size:4rem;
       color:#d90429;
-      font-size:3.2rem;
-      margin-bottom:15px;
+      margin-bottom:8px;
+      text-shadow:0 4px 12px rgba(255,0,80,0.15);
     }
 
-    .subtitle{
+    .tagline{
       text-align:center;
-      line-height:1.9;
-      color:#5b1c1c;
-      font-size:0.96rem;
-      margin-bottom:25px;
+      color:#7a1e2c;
+      font-size:1rem;
+      margin-bottom:24px;
+      line-height:1.8;
     }
 
-    .cards{
-      display:flex;
-      flex-direction:column;
-      gap:16px;
-    }
-
-    .card{
-      background:#ffffffda;
-      padding:18px;
-      border-radius:24px;
+    .love-box{
+      background:rgba(255,255,255,0.72);
+      border-radius:28px;
+      padding:20px;
+      margin-bottom:18px;
       box-shadow:0 8px 20px rgba(255,0,85,0.08);
-      transition:0.35s ease;
+      transition:0.35s;
     }
 
-    .card:hover{
+    .love-box:hover{
       transform:translateY(-5px);
     }
 
-    .card h2{
+    .love-box h2{
       color:#d90429;
       margin-bottom:10px;
-      font-size:1.2rem;
+      font-size:1.25rem;
     }
 
-    .card p{
-      line-height:1.7;
+    .love-box p{
+      line-height:1.8;
+      font-size:0.94rem;
       color:#4d1d1d;
-      font-size:0.93rem;
     }
 
     .buttons{
-      margin-top:25px;
+      margin-top:20px;
       display:grid;
       gap:14px;
     }
 
     .btn{
       text-decoration:none;
-      background:#d90429;
-      color:white;
       text-align:center;
       padding:15px;
-      border-radius:18px;
+      border-radius:20px;
+      background:#d90429;
+      color:white;
       font-weight:600;
       transition:0.3s;
-      box-shadow:0 8px 18px rgba(217,4,41,0.25);
+      box-shadow:0 8px 18px rgba(217,4,41,0.28);
     }
 
     .btn:hover{
@@ -149,9 +145,9 @@
       background:#ef233c;
     }
 
-    .cute{
+    .footer{
+      margin-top:20px;
       text-align:center;
-      margin-top:18px;
       font-size:1.8rem;
       animation:bounce 2s infinite;
     }
@@ -165,90 +161,96 @@
       }
     }
 
+    .glow{
+      color:#ff4d6d;
+      font-weight:600;
+    }
+
   </style>
 </head>
 <body>
 
-<div class="bg-hearts" id="bg"></div>
+<div class="bg" id="bg"></div>
 
-<div class="container">
+<section class="main">
 
   <div class="glass">
 
-    <h1 class="title">Her Beauty ❤️</h1>
+    <h1 class="name">Roshnee ❤️</h1>
 
-    <p class="subtitle">
-      Your eyes hold galaxies,<br>
-      your smile calms my storms,<br>
-      your hair flows like poetry,<br>
-      and your beauty rewrites my universe.
+    <p class="tagline">
+      She is not just beautiful.<br>
+      She is the reason love feels magical.<br>
+      Every little thing about <span class="glow">Roshnee</span>
+      makes my world softer, brighter, and happier.
     </p>
 
-    <div class="cards">
+    <div class="love-box">
+      <h2>👀 Her Eyes</h2>
+      <p>
+        Roshnee's eyes shine like midnight stars.
+        One look from her can calm every storm inside me.
+      </p>
+    </div>
 
-      <div class="card">
-        <h2>👀 Her Eyes</h2>
-        <p>
-          Her eyes shine softer than moonlight,
-          yet stronger than every emotion inside me.
-        </p>
-      </div>
+    <div class="love-box">
+      <h2>💇 Her Hair</h2>
+      <p>
+        Her hair flows beautifully like poetry in the wind,
+        soft enough to make my heart melt instantly.
+      </p>
+    </div>
 
-      <div class="card">
-        <h2>💇 Her Hair</h2>
-        <p>
-          Every strand dances like silk in the wind,
-          making my heart stop for a second.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>🌸 Her Nose</h2>
-        <p>
-          Cute, delicate, beautiful —
-          like every detail was crafted by love itself.
-        </p>
-      </div>
-
+    <div class="love-box">
+      <h2>🌸 Her Beauty</h2>
+      <p>
+        Every smile of Roshnee feels like sunshine.
+        Cute, elegant, gentle and breathtaking in every way.
+      </p>
     </div>
 
     <div class="buttons">
-      <a href="poem.html" class="btn">Poems ❤️</a>
+
+      <a href="poem.html" class="btn">Poems For Roshnee ❤️</a>
+
       <a href="notes.html" class="btn">Cute Notes 💌</a>
-      <a href="timer.html" class="btn">Our Time ⏳</a>
-      <a href="game.html" class="btn">Love Game 🎮</a>
+
+      <a href="timer.html" class="btn">Our Love Time ⏳</a>
+
+      <a href="game.html" class="btn">Love Mini Game 🎮</a>
+
     </div>
 
-    <div class="cute">
-      ❤️ 🌹 ✨ 💌
+    <div class="footer">
+      ❤️ 🌹 ✨ 💌 🦋
     </div>
 
   </div>
 
-</div>
+</section>
 
 <script>
 
-  const bg = document.getElementById("bg");
+const bg = document.getElementById("bg");
 
-  for(let i=0;i<25;i++){
+for(let i=0;i<30;i++){
 
-    const heart = document.createElement("div");
+  const heart = document.createElement("div");
 
-    heart.classList.add("heart");
+  heart.classList.add("heart");
 
-    heart.innerHTML = "❤️";
+  heart.innerHTML = "❤️";
 
-    heart.style.left = Math.random()*100 + "vw";
+  heart.style.left = Math.random()*100 + "vw";
 
-    heart.style.fontSize = (Math.random()*22 + 14) + "px";
+  heart.style.fontSize = (Math.random()*20 + 14) + "px";
 
-    heart.style.animationDuration = (Math.random()*10 + 8) + "s";
+  heart.style.animationDuration = (Math.random()*10 + 8) + "s";
 
-    heart.style.opacity = Math.random();
+  heart.style.opacity = Math.random();
 
-    bg.appendChild(heart);
-  }
+  bg.appendChild(heart);
+}
 
 </script>
 
